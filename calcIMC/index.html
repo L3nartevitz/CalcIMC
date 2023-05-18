@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Concert One">
+	<title>IMC</title>
+</head>
+<body>
+	<main>
+	<h1>Cálculo de</h1>
+	<h2> I .  M  . C </h2>
+			<div class="Nome">
+				<label for="nome" required>Nome</label>
+				<input type="text" id="nome">
+		</div>
+		<div class="Altura">
+				<label for="altura">Altura (m)</label>
+				<input type="number" id="altura">
+		</div>
+		<div class="Massa">
+				<label for="massa">Massa (Kg)</label>
+				<input type="number" id="massa">
+		</div>	
+
+		<div class="Calculo">
+			<input id="sexo" type="submit" onclick="calcIMC()">
+		</div>
+
+		<p id="resultado"></p>
+	</main>
+
+	<script src="js.js"></script>
+</body>
+</html>

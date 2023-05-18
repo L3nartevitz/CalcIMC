@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+div, h2, p{
+	font-family: Arial, sans-serif;
+}
+h1{
+	font-family: 'Concert One', serif;
+	font-size: 60px;
+}
+body{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	background: #c0d1eb;
+	color: #1a3a6b;
+}
+main{
+	width: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 15px;
+}
+.Altura, .Massa, .Calculo, .Nome{
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+input, button{
+	padding: 10px;
+	font-size: 20px;
+	outline: none;
+	border: none;
+	border-radius: 11px;
+}
+#sexo{
+	transition: all 0.1s ease-in-out;
+	background-color: #7998c7;
+	color:#1a3a6b;
+}
+
+#sexo:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+@media (max-width: 500px){
+	body, input, button{
+		font-size: 15px;
+	}
+}
+
+#resultado{
+	color: #1a3a6b;
+	font-size: 1.5rem;
+	z-index: 99;
+}
